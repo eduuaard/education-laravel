@@ -1,23 +1,48 @@
-## Laravel Education
-
-Desenvolvi um sistema de educação para um Engenheiro e Professor da Universidade Federal de Alagoas (UFAL). O intuito do sistema é ter alunos cadastrados e que eles possam responder perguntas dentro do sistema calculando a sua pontuação.
-
-## Quais funcionalidades?
-
-O sistema conta com CRUD completo de usuário/aluno, unidade de ensino, perguntas e respostas.
-Cada usuário tem um nível, 0 ou 1. 0 é o ADM que tem acesso a todos os CRUD e dados dos alunos e 1 é o aluno que só tem acesso as perguntas para responder e o dashboard com a sua média de pontuação das perguntas.
-
-Já para o administrador consegue ver os dados geral dos alunos pelo o dashboard.
-
-# Clonar o repositório
-git clone https://github.com/eduuaard/laravel-education.git
-
-# Instalar as dependências
-composer update
-crie .env e conecte com seu banco de dados
-php artisan migrate
-php db:seed
+## ✨ Tio Educação
 
 
+## 🚀 How to Use
+
+1. **Clone Repository or Download**
+    ```bash
+    git clone https://github.com/eduuaard/education-laravel.git
+    ```
+    
+2. **Setup**
+    ```bash
+    # Go into the repository
+    cd education-laravel
+
+    # Install dependencies
+    composer install
+
+    # Open with your text editor
+    code .
+    ```
+   
+3. **.ENV**
+    Rename or copy the `.env.example` file to `.env`
+    ```bash
+    # Generate app key
+    php artisan key:generate
+    ```
+
+4. **Setup Database**
+    Setup your database credentials in your `.env` file.
+
+5. **Seed Database**
+    ```bash
+    php artisan migrate:fresh --seed
+    ```
+   *Note: If showing an error, please try to rerun this command.*
+
+
+7. **Run Server**
+    ```bash
+    php artisan serve
+    ```
+
+9. **Login**
+    Try login with username: `teste@educacao.com` and password: `password`
 
 
