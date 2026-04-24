@@ -24,7 +24,11 @@
     Rename or copy the `.env.example` file to `.env`
     ```bash
     # Generate app key
+    cp .env.example .env
     php artisan key:generate
+    DB_DATABASE=education-master
+    DB_USERNAME=root
+    DB_PASSWORD=
     ```
 
 4. **Setup Database**
@@ -36,8 +40,9 @@
     ```
    *Note: If showing an error, please try to rerun this command.*
 
-   6. **Run Setup.SQL**
+   6. **Run Setup Database Views(Setup.SQL)**
     ```bash
+    This project uses SQL views to generate dynamic metrics (dashboard data).
     Copy the code from the SETUP.SQL file to your database to create all the views that 
     will intelligently interpret the database data.
     ```
