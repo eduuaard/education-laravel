@@ -36,6 +36,12 @@
     ```
    *Note: If showing an error, please try to rerun this command.*
 
+   6. **Run Setup.SQL**
+    ```bash
+    Copy the code from the SETUP.SQL file to your database to create all the views that 
+    will intelligently interpret the database data.
+    ```
+
 
 7. **Run Server**
     ```bash
